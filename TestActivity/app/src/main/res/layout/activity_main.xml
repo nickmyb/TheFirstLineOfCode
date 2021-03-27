@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_activity_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="acitivity 1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-197dp"
+        tools:layout_editor_absoluteY="133dp" />
+
+    <Button
+        android:id="@+id/button_activity_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="acitivity 2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="251dp" />
+
+    <Button
+        android:id="@+id/button_activity_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="acitivity 3"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="374dp" />
+
+    <Button
+        android:id="@+id/button_activity_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="acitivity 4"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="488dp" />
+
+</LinearLayout>

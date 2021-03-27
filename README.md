@@ -6,3 +6,21 @@
 - VMware Workstation 16 Pro
 - Ubuntu 20.04
 - Android Studio 4.1.3
+- Pixel3 Android9
+
+## 2. 初次阅读顺序
+
+- [知乎田元大佬推荐的入门阅读顺序](https://www.zhihu.com/question/27596017/answer/80319302)
+
+## 3. 第1章
+
+- 创建第一个Android项目
+- Android基本项目结构
+
+## 4. 第2章
+
+- 创建Activity
+- layout
+- Toast
+- Menu
+- 显式隐式Intent以及通过Intent在前后Activity间的数据传递
