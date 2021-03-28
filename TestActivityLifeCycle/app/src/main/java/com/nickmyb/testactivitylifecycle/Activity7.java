@@ -8,7 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-public class Activity7 extends AppCompatActivity {
+public class Activity7 extends BaseActivity {
     private static final String TAG = "SINGLEINSTANCE";
 
     @Override

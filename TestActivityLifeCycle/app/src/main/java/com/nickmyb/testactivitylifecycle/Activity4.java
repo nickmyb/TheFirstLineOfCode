@@ -8,7 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-public class Activity4 extends AppCompatActivity {
+public class Activity4 extends BaseActivity {
     private static final String TAG = "SINGLETOP";
 
     @Override

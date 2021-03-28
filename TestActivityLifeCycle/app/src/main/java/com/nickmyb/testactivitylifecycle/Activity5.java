@@ -8,7 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-public class Activity5 extends AppCompatActivity {
+public class Activity5 extends BaseActivity {
     private static final String TAG = "SINGLETASK";
 
     @Override
