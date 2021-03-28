@@ -24,3 +24,4 @@
 - Toast
 - Menu
 - 显式隐式Intent以及通过Intent在前后Activity间的数据传递
+- Activity Life Cycle
