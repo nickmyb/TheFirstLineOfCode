@@ -14,9 +14,32 @@
         android:text="start a normal activity" />
 
     <Button
-        android:id="@+id/buuton_start_dialog"
+        android:id="@+id/button_start_dialog"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="start a dialog activity" />
 
+    <Button
+        android:id="@+id/button_lunch_standard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="lunch standard" />
+
+    <Button
+        android:id="@+id/button_lunch_single_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="lunch single top" />
+
+    <Button
+        android:id="@+id/button_lunch_single_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="lunch single task" />
+
+    <Button
+        android:id="@+id/button_lunch_single_instance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="lunch single instance" />
 </LinearLayout>

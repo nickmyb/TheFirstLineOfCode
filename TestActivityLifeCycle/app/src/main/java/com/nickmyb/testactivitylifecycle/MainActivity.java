@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         Button button_start_normal = (Button) findViewById(R.id.button_start_nomal);
-        Button button_start_dialog = (Button) findViewById(R.id.buuton_start_dialog);
+        Button button_start_dialog = (Button) findViewById(R.id.button_start_dialog);
 
         button_start_normal.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,6 +38,39 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, Activity2.class);
+                startActivity(intent);
+            }
+        });
+
+        Button button_lunch_standard = (Button) findViewById(R.id.button_lunch_standard);
+        Button button_lunch_single_top = (Button) findViewById(R.id.button_lunch_single_top);
+        Button button_lunch_single_task = (Button) findViewById(R.id.button_lunch_single_task);
+        Button button_lunch_single_instance = (Button) findViewById(R.id.button_lunch_single_instance);
+        button_lunch_standard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Activity3.class);
+                startActivity(intent);
+            }
+        });
+        button_lunch_single_top.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Activity4.class);
+                startActivity(intent);
+            }
+        });
+        button_lunch_single_task.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Activity5.class);
+                startActivity(intent);
+            }
+        });
+        button_lunch_single_instance.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Activity7.class);
                 startActivity(intent);
             }
         });

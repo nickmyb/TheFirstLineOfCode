@@ -9,7 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TestActivityLifeCycle">
-        <activity android:name=".Activity2"
+        <activity android:name=".Activity8"
+            android:launchMode="singleInstance" />
+        <activity android:name=".Activity7" />
+        <activity android:name=".Activity6" />
+        <activity
+            android:name=".Activity5"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".Activity4"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".Activity3"
+            android:launchMode="standard" />
+        <activity
+            android:name=".Activity2"
             android:theme="@style/Theme.AppCompat.Dialog" />
         <activity android:name=".Activity1" />
         <activity android:name=".MainActivity">
