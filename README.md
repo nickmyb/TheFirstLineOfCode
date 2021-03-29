@@ -34,3 +34,7 @@
 - 常用控件
 - 布局(现在一般使用ConstraintLayout)
 - ListView & RecyclerView
+
+## 6. 第5章
+
+- 接收系统广播
