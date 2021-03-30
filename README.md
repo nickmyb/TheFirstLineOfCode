@@ -45,3 +45,7 @@
 
 - 文件读写
 - SharedPreferences
+
+## 8. 第7章
+
+- 权限申请
