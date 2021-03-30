@@ -29,6 +29,12 @@ public class MainActivity extends AppCompatActivity {
         connectivityChangeBroadcastReceiver = new ConnectivityChangeBroadcastReceiver();
         registerReceiver(connectivityChangeBroadcastReceiver, intentFilter);
 
+        IntentFilter intentFilterN1 = new IntentFilter();
+        intentFilterN1.addAction("com.nickmyb.testbroadcast.N1_BROADCAST");
+        intentFilterN1.setPriority(50);
+        N1Receiver n1Receiver = new N1Receiver();
+        registerReceiver(n1Receiver, intentFilterN1);
+
         Button n1_broadcast_button = (Button) findViewById(R.id.n1_broadcast_button);
         n1_broadcast_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,11 +43,13 @@ public class MainActivity extends AppCompatActivity {
 
                 // 8.0后需要setPackage 或者 setComponent
                 // intent.setPackage(getPackageName());
-                intent.setComponent(new ComponentName(
-                        getPackageName(),
-                        "com.nickmyb.testbroadcast.N1Receiver")
-                );
-                sendBroadcast(intent);
+//                intent.setComponent(new ComponentName(
+//                        getPackageName(),
+//                        "com.nickmyb.testbroadcast.N1Receiver")
+//                );
+//                sendBroadcast(intent);
+
+                sendOrderedBroadcast(intent, null);
             }
         });
     }
