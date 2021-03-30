@@ -12,14 +12,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TestBroadcast">
-<!--        <receiver-->
-<!--            android:name=".N1Receiver"-->
-<!--            android:enabled="true"-->
-<!--            android:exported="true">-->
-<!--            <intent-filter>-->
-<!--                <action android:name="com.nickmyb.testbroadcast.N1_BROADCAST" />-->
-<!--            </intent-filter>-->
-<!--        </receiver>-->
+        <receiver
+            android:name=".ForceOfflineReceiverStatic"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.nickmyb.testbroadcast.FORCE_OFFLINE_STATIC" />
+            </intent-filter>
+        </receiver>
+        <!-- <receiver -->
+        <!-- android:name=".N1Receiver" -->
+        <!-- android:enabled="true" -->
+        <!-- android:exported="true"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.nickmyb.testbroadcast.N1_BROADCAST" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
         <receiver
             android:name=".BootCompletedReceiver"
             android:enabled="true"
