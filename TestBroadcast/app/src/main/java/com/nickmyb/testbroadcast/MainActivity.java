@@ -1,6 +1,7 @@
 package com.nickmyb.testbroadcast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
     private IntentFilter intentFilter;
     private ConnectivityChangeBroadcastReceiver connectivityChangeBroadcastReceiver;
+    private LocalBroadcastManager localBroadcastManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +37,11 @@ public class MainActivity extends AppCompatActivity {
         N1Receiver n1Receiver = new N1Receiver();
         registerReceiver(n1Receiver, intentFilterN1);
 
+        IntentFilter intentFilterLocal = new IntentFilter();
+        intentFilterLocal.addAction("com.nickmyb.testbroadcast.LOCAL_BROADCAST");
+        localBroadcastManager = LocalBroadcastManager.getInstance(this);
+        localBroadcastManager.registerReceiver(new LocalReceiver(), intentFilterLocal);
+
         Button n1_broadcast_button = (Button) findViewById(R.id.n1_broadcast_button);
         n1_broadcast_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,6 +57,9 @@ public class MainActivity extends AppCompatActivity {
 //                sendBroadcast(intent);
 
                 sendOrderedBroadcast(intent, null);
+
+                Intent localIntent = new Intent("com.nickmyb.testbroadcast.LOCAL_BROADCAST");
+                localBroadcastManager.sendBroadcast(localIntent);
             }
         });
     }
