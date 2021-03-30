@@ -25,5 +25,4 @@
         app:layout_constraintVertical_bias="1"
         android:text="n1_broadcast_button" />
 
-
 </androidx.constraintlayout.widget.ConstraintLayout>
