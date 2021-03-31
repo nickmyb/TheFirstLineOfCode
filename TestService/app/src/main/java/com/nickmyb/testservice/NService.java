@@ -26,6 +26,8 @@ public class NService extends Service {
 
     @Override
     public IBinder onBind(Intent intent) {
+        Log.i(TAG, "NService instance = " + this);
+        Log.i(TAG, "NBinder instance = " + nBinder);
         return nBinder;
     }
 
@@ -38,6 +40,7 @@ public class NService extends Service {
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         Log.i(TAG, "onStartCommand");
+        Log.i(TAG, "NService instance = " + this);
         return super.onStartCommand(intent, flags, startId);
     }
 
