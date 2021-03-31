@@ -60,3 +60,5 @@
 
 - Handler
 - AsyncTask
+- Service
+- Binder
